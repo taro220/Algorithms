@@ -9,7 +9,7 @@ def insert(arr):
     for idx in range(1,len(arr)):
         if arr[idx] < arr[idx-1]:
             min = arr[idx]
-            # print arr
+            print arr
             for idx2 in range(idx-1,-1,-1):
                 if min < arr[idx2] and idx2 != 0:
                     continue
@@ -21,8 +21,8 @@ def insert(arr):
                     arr.pop(idx)
                     arr.insert(0,min)
         else:
-            # print arr
+            print arr
 
     return arr
 
-print insert([6,5,3,1,8,7,2,4])
+print insert([3,6,15,13,9,1])
